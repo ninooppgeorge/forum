@@ -1,0 +1,14 @@
+input[type="submit"], .button {
+  padding: 13px;
+  background: #519dca;
+  color: #fff;
+  border: 1px solid #519dca;
+  font-weight: bold;
+  min-width: 130px;
+  border-radius: 3px; }
+
+input[type="text"], input[type="email"], input[type="password"] {
+  padding: 13px;
+  border: 1px solid #ddd; }
+
+/*# sourceMappingURL=components.css.map */

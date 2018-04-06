@@ -1,0 +1,20 @@
+@import './fontsnin';
+
+*{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'LatoLatin';
+}
+
+body{
+    overflow-x: hidden;
+    max-width: 1400px;
+    margin: auto;
+}
+
+@import './grid';
+@import './animate';
+
+@import './components/components';

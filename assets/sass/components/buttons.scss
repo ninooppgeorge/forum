@@ -1,0 +1,10 @@
+@import './../var';
+input[type="submit"],.button{
+    padding: 13px;
+    background: $blue;
+    color: #fff;
+    border: 1px solid $blue;
+    font-weight: bold;
+    min-width: 130px;
+    border-radius: 3px;
+}

@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <?php include_once "inc/html_files.php" ?>
 </head>
 <body>
-    <form action="">
-        <input type="text" placeholder="Enter username">
-        <input type="text" placeholder="Enter password">
+    <form action="depend/register.php" method="POST">
+        <input type="text" name="rollno" placeholder="Enter rollno">
+        <input type="text" name="email" placeholder="Enter email">
+        <input type="text" name="password" placeholder="Enter password">
         <input type="submit" class="button">
     </form>
 </body>
