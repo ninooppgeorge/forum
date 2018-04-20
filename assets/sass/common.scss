@@ -1,0 +1,14 @@
+@import './var';
+.error{
+    color: $red;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-top: 20px;
+    display: block;
+}
+.success{
+    color: $green;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}

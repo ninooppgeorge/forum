@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;;;;GAQG;AACF;SACU;EACN,OAAO,EAAE,GAAG;EAAE,OAAO;EACrB,OAAO,EAAE,KAAK;EAAE,OAAO;;AAG3B,SAAU;EACN,KAAK,EAAE,IAAI;;AAGf;;;GAGG;AACH,GAAI;EACA,KAAK,EAAE,CAAC",
+"sources": ["../sass/clearfix.scss"],
+"names": [],
+"file": "clearfix.css"
+}

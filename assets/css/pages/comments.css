@@ -1,0 +1,40 @@
+.comments_container {
+  width: 97%;
+  background: #f7f7f7;
+  padding: 10px;
+  margin-top: -1px;
+  margin-left: 3%;
+  border: 1px solid #dcdcdc; }
+  .comments_container form img {
+    float: left;
+    margin-right: 10px; }
+  .comments_container form input[type="text"] {
+    width: 90%;
+    margin-bottom: 5px; }
+  .comments_container form input[type="submit"] {
+    display: none;
+    margin-left: 8%;
+    min-width: 80px; }
+  .comments_container .comment_single {
+    min-height: 50px;
+    border-bottom: 1px solid rgba(223, 223, 223, 0.74);
+    margin-bottom: 5px; }
+    .comments_container .comment_single .comment_ppiccont .left {
+      float: left; }
+    .comments_container .comment_single .comment_ppiccont .right {
+      float: right;
+      width: 91%; }
+    .comments_container .comment_single .comment_ppiccont img {
+      width: 40px;
+      border-radius: 3px;
+      margin-right: 10px;
+      border: 1px solid #ddd; }
+    .comments_container .comment_single .comment_ppiccont .floatafterimg .name {
+      font-size: 13px;
+      font-weight: bold; }
+    .comments_container .comment_single .comment_ppiccont .floatafterimg .time {
+      float: right;
+      font-size: 12px;
+      color: #999; }
+
+/*# sourceMappingURL=comments.css.map */

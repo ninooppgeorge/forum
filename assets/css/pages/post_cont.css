@@ -1,0 +1,20 @@
+.post_container {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 4px; }
+  .post_container .name {
+    font-weight: bold; }
+  .post_container .ppiccont img {
+    width: 50px;
+    border-radius: 4px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #ddd; }
+  .post_container .ppiccont .floatafterimg .time {
+    display: block;
+    color: #999;
+    font-size: 14px; }
+
+/*# sourceMappingURL=post_cont.css.map */

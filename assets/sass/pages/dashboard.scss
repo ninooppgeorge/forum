@@ -1,0 +1,29 @@
+.dashcont{
+    margin-top: 8%;   
+}
+.dashboard{
+    .postform{
+        width: 100%;
+        background: #fff;
+        border: 1px solid #e4e4e4;
+        padding: 20px;
+        display: block;
+        textarea{
+            width: 100%;
+            outline: none;
+            padding: 10px;
+            font-size: 20px;
+            resize: none;
+        }
+
+    }
+    .loading_cont{
+        width: 100%;
+        text-align: center;
+        .loading_comp{
+            display: none;
+        }
+    }
+}
+@import './post_cont';
+@import './comments';

@@ -12,9 +12,13 @@ body{
     overflow-x: hidden;
     max-width: 1400px;
     margin: auto;
+    background: #eee;
 }
 
+@import './clearfix';
+@import './common';
 @import './grid';
 @import './animate';
 
 @import './components/components';
+@import './pages/pages';

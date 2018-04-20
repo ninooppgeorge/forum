@@ -1,10 +1,17 @@
 input[type="submit"], .button {
   padding: 13px;
+  text-align: center;
+  text-decoration: none;
   background: #519dca;
+  outline: none;
+  cursor: pointer;
   color: #fff;
   border: 1px solid #519dca;
   font-weight: bold;
   min-width: 130px;
   border-radius: 3px; }
+
+.round {
+  border-radius: 100px !important; }
 
 /*# sourceMappingURL=buttons.css.map */

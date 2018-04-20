@@ -1,0 +1,21 @@
+.signup {
+  background: #ececec; }
+  .signup .left {
+    margin-top: 15%;
+    padding-left: 7%; }
+    .signup .left p {
+      font-weight: 100;
+      font-size: 65px; }
+    .signup .left .register {
+      font-size: 25px;
+      display: inline-block; }
+  .signup .right {
+    margin-top: 17%; }
+    .signup .right form {
+      padding: 0% 25%; }
+      .signup .right form input {
+        display: block;
+        width: 100%;
+        margin-top: 10px; }
+
+/*# sourceMappingURL=signup.css.map */

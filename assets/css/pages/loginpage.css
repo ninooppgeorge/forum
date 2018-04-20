@@ -1,0 +1,21 @@
+.login {
+  background: #ececec; }
+  .login .left {
+    margin-top: 15%;
+    padding-left: 7%; }
+    .login .left p {
+      font-weight: 100;
+      font-size: 65px; }
+    .login .left .register {
+      font-size: 25px;
+      display: inline-block; }
+  .login .right {
+    margin-top: 17%; }
+    .login .right form {
+      padding: 0% 25%; }
+      .login .right form input {
+        display: block;
+        width: 100%;
+        margin-top: 10px; }
+
+/*# sourceMappingURL=loginpage.css.map */

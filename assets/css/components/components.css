@@ -1,14 +1,43 @@
 input[type="submit"], .button {
   padding: 13px;
+  text-align: center;
+  text-decoration: none;
   background: #519dca;
+  outline: none;
+  cursor: pointer;
   color: #fff;
   border: 1px solid #519dca;
   font-weight: bold;
   min-width: 130px;
   border-radius: 3px; }
 
+.round {
+  border-radius: 100px !important; }
+
 input[type="text"], input[type="email"], input[type="password"] {
   padding: 13px;
   border: 1px solid #ddd; }
+
+.dashnav {
+  background: #fff;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px; }
+  .dashnav .username {
+    color: #555;
+    float: right;
+    margin-right: 80px; }
+    .dashnav .username img {
+      border-radius: 4px;
+      float: left; }
+    .dashnav .username a {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+      margin-left: 50px; }
 
 /*# sourceMappingURL=components.css.map */

@@ -1,0 +1,14 @@
+.error {
+  color: #f06;
+  font-weight: bolder;
+  font-size: 15px;
+  margin-top: 20px;
+  display: block; }
+
+.success {
+  color: #49b73b;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block; }
+
+/*# sourceMappingURL=common.css.map */

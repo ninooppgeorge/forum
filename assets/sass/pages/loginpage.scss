@@ -1,0 +1,26 @@
+.login{
+    background: #ececec;
+    .left{
+        margin-top: 15%;
+        padding-left: 7%;
+        p{
+            font-weight: 100;
+            font-size: 65px;
+        }
+        .register{
+            font-size: 25px;
+            display: inline-block;
+        }
+    }
+    .right{
+        margin-top: 17%;
+        form{
+            padding: 0% 25%;
+            input{
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}
