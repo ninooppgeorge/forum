@@ -6,12 +6,17 @@
         $db = new db();
         $user = new user($db->connect());
 
+        $fullname = $_POST['fullname'];
         $rollno = $_POST['rollno'];
         $email = $_POST['email'];
         $pass = md5(sha1(md5($_POST['password'])));
-        $reg= $user->register($email,$pass,$rollno);
+        $dept = $_POST['dept'];
+        $sem = $_POST['sem'];
+
+
+        $reg= $user->register($fullname,$email,$pass,$rollno,$dept,$sem);
         if($reg==true){
-            echo "1";
+            echo $reg;
         }else{
             echo "0";
         }

@@ -1,0 +1,15 @@
+.sidenav ul {
+  margin-left: 20px;
+  padding-right: 40px; }
+  .sidenav ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 10px 10px; }
+    .sidenav ul li a {
+      text-decoration: none;
+      color: inherit; }
+    .sidenav ul li.active {
+      background: #6c97b1;
+      color: #fff; }
+
+/*# sourceMappingURL=sidenav.css.map */

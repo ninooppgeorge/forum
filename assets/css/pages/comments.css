@@ -23,7 +23,7 @@
       float: left; }
     .comments_container .comment_single .comment_ppiccont .right {
       float: right;
-      width: 91%; }
+      width: 90%; }
     .comments_container .comment_single .comment_ppiccont img {
       width: 40px;
       border-radius: 3px;
@@ -36,5 +36,10 @@
       float: right;
       font-size: 12px;
       color: #999; }
+    .comments_container .comment_single .comment_ppiccont .floatafterimg .delete {
+      color: red;
+      margin-left: 10px;
+      font-weight: bold;
+      cursor: pointer; }
 
 /*# sourceMappingURL=comments.css.map */

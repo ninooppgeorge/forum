@@ -1,8 +1,37 @@
+.likebox{
+    float: left;
+    width: 10%;
+    display: block;
+    text-align: center;
+    .post_like,.post_dislike{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 15px;
+        color: #95c12a;
+        display: block;
+        i{
+
+        }
+    }
+    .post_count{
+        color: #888;
+        font-weight: 700;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+}
+.post_cont_inner{
+    width: 90%;
+    display: block;
+    float: right;
+}
+.post_cont_cont{
+    margin-top: 20px;
+}
 .post_container{
     background: #fff;
     padding: 10px;
     border: 1px solid #ddd;
-    margin-top: 20px;
     border-radius: 4px;
     .name{
         font-weight: bold;

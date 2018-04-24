@@ -18,6 +18,10 @@ input[type="text"], input[type="email"], input[type="password"] {
   padding: 13px;
   border: 1px solid #ddd; }
 
+select {
+  padding: 13px;
+  border: 1px solid #ddd; }
+
 .dashnav {
   background: #fff;
   border-bottom: 2px solid #ddd;
@@ -39,5 +43,19 @@ input[type="text"], input[type="email"], input[type="password"] {
       margin-top: 10px;
       display: block;
       margin-left: 50px; }
+
+.sidenav ul {
+  margin-left: 20px;
+  padding-right: 40px; }
+  .sidenav ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 10px 10px; }
+    .sidenav ul li a {
+      text-decoration: none;
+      color: inherit; }
+    .sidenav ul li.active {
+      background: #6c97b1;
+      color: #fff; }
 
 /*# sourceMappingURL=components.css.map */

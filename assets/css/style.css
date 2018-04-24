@@ -1429,6 +1429,10 @@ input[type="text"], input[type="email"], input[type="password"] {
   padding: 13px;
   border: 1px solid #ddd; }
 
+select {
+  padding: 13px;
+  border: 1px solid #ddd; }
+
 .dashnav {
   background: #fff;
   border-bottom: 2px solid #ddd;
@@ -1450,6 +1454,20 @@ input[type="text"], input[type="email"], input[type="password"] {
       margin-top: 10px;
       display: block;
       margin-left: 50px; }
+
+.sidenav ul {
+  margin-left: 20px;
+  padding-right: 40px; }
+  .sidenav ul li {
+    list-style: none;
+    font-weight: bold;
+    padding: 10px 10px; }
+    .sidenav ul li a {
+      text-decoration: none;
+      color: inherit; }
+    .sidenav ul li.active {
+      background: #6c97b1;
+      color: #fff; }
 
 .login {
   background: #ececec; }
@@ -1486,7 +1504,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     margin-top: 17%; }
     .signup .right form {
       padding: 0% 25%; }
-      .signup .right form input {
+      .signup .right form input, .signup .right form select {
         display: block;
         width: 100%;
         margin-top: 10px; }
@@ -1512,11 +1530,56 @@ input[type="text"], input[type="email"], input[type="password"] {
   .dashboard .loading_cont .loading_comp {
     display: none; }
 
+.drop_p {
+  position: absolute;
+  background: #fff;
+  display: none;
+  width: 150px;
+  top: 100%;
+  border: 1px solid #ddd; }
+  .drop_p ul li {
+    list-style: none; }
+    .drop_p ul li a {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+      text-decoration: none;
+      color: #333;
+      border-top: 1px solid #ddd;
+      padding: 6px 0px;
+      font-size: 14px;
+      margin-top: 0 !important; }
+    .drop_p ul li:first-child a {
+      border-top: 0; }
+
+.likebox {
+  float: left;
+  width: 10%;
+  display: block;
+  text-align: center; }
+  .likebox .post_like, .likebox .post_dislike {
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 15px;
+    color: #95c12a;
+    display: block; }
+  .likebox .post_count {
+    color: #888;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 13px; }
+
+.post_cont_inner {
+  width: 90%;
+  display: block;
+  float: right; }
+
+.post_cont_cont {
+  margin-top: 20px; }
+
 .post_container {
   background: #fff;
   padding: 10px;
   border: 1px solid #ddd;
-  margin-top: 20px;
   border-radius: 4px; }
   .post_container .name {
     font-weight: bold; }
@@ -1556,7 +1619,7 @@ input[type="text"], input[type="email"], input[type="password"] {
       float: left; }
     .comments_container .comment_single .comment_ppiccont .right {
       float: right;
-      width: 91%; }
+      width: 90%; }
     .comments_container .comment_single .comment_ppiccont img {
       width: 40px;
       border-radius: 3px;
@@ -1569,5 +1632,10 @@ input[type="text"], input[type="email"], input[type="password"] {
       float: right;
       font-size: 12px;
       color: #999; }
+    .comments_container .comment_single .comment_ppiccont .floatafterimg .delete {
+      color: red;
+      margin-left: 10px;
+      font-weight: bold;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

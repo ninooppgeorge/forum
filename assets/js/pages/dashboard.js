@@ -36,4 +36,45 @@ $(document).ready(function(){
         return false;
     });
 
+    $(document).on('click','.delete_btn',function(){
+        var id = $(this).attr('id');
+        var sid = id.split('-')[1];
+        console.log(sid);
+        $.ajax({
+            url: './inc/dashboard/delete_comment.php',
+            data: 'rid='+sid,
+            type: 'POST',
+            success: function(data){
+                $('#comment-single-'+data).slideUp();
+            }
+        });
+    });
+
+
+    $(document).on('click','.post_like',function(){
+        var id = $(this).attr('id');
+        var sid = id.split('-')[1];
+        $.ajax({
+            url: './inc/dashboard/insert_like.php',
+            data: 'id='+sid+'&type=0',
+            type: 'POST',
+            success: function(data){
+                //alert(data);
+            }
+        })
+    });
+
+    $(document).on('click','.post_dislike',function(){
+        var id = $(this).attr('id');
+        var sid = id.split('-')[1];
+        $.ajax({
+            url: './inc/dashboard/insert_like.php',
+            data: 'id='+sid+'&type=0&remove=true',
+            type: 'POST',
+            success: function(data){
+                //alert(data);
+            }
+        })
+    });
+
 });
