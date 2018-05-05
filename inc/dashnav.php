@@ -21,8 +21,8 @@
         <a class="drop_open"><?php echo $uinfo['fullname']; ?></a>
         <div class="drop_p">
             <ul>
-                <li><a href="logout.php">Dashboard</a></li>
-                <li><a href="logout.php">My Profile</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="myprofile.php">My Profile</a></li>
                 <li><a href="logout.php">Log out</a></li>
             </ul>
         </div>

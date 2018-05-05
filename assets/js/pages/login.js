@@ -6,11 +6,13 @@ $(document).ready(function(){
         
         success: function(data){
             console.log(data);
-            if(data==="1"){
+            data = parseInt(data);
+            if(data==1){
                 window.location = "dashboard.php";
-            }else{
+            }else if(data==2){
+                window.location = "admin.php";
+            }else if(data==0){
                 $('.error').show();
-
             }
         }
     });

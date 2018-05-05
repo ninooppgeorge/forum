@@ -23,7 +23,7 @@
                 <?php
                     }
                 ?>
-                <a class="post_count"><?php echo $user->post_get_likes($value['pid']); ?></a>
+                <a class="post_count" id="like_count-<?php echo $value['pid']; ?>"><?php echo $user->post_get_likes($value['pid']); ?></a>
             </div>
             <div class="post_cont_inner">
                 <div class="post_container" id="pcont<?php echo $value['pid']; ?>">

@@ -1562,6 +1562,8 @@ select {
     margin-top: 15px;
     color: #95c12a;
     display: block; }
+  .likebox .post_dislike {
+    color: #ff003b; }
   .likebox .post_count {
     color: #888;
     font-weight: 700;

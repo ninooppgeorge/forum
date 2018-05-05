@@ -59,7 +59,13 @@ $(document).ready(function(){
             data: 'id='+sid+'&type=0',
             type: 'POST',
             success: function(data){
-                //alert(data);
+                $('#post_like-'+sid+' i').removeClass('fa-thumbs-up');
+                $('#post_like-'+sid+' i').addClass('fa-thumbs-down');
+                $('#post_like-'+sid).addClass('post_dislike');
+                $('#post_like-'+sid).removeClass('post_like');
+                $('#post_like-'+sid).attr('id','post_dislike-'+sid);
+                var count = $('#like_count-'+sid).html();
+                $('#like_count-'+sid).html(parseInt(count)+1);
             }
         })
     });
@@ -72,7 +78,13 @@ $(document).ready(function(){
             data: 'id='+sid+'&type=0&remove=true',
             type: 'POST',
             success: function(data){
-                //alert(data);
+                $('#post_dislike-'+sid+' i').removeClass('fa-thumbs-down');
+                $('#post_dislike-'+sid+' i').addClass('fa-thumbs-up');
+                $('#post_dislike-'+sid).addClass('post_like');
+                $('#post_dislike-'+sid).removeClass('post_dislike');
+                $('#post_dislike-'+sid).attr('id','post_like-'+sid);
+                var count = $('#like_count-'+sid).html();
+                $('#like_count-'+sid).html(parseInt(count)-1);
             }
         })
     });

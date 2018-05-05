@@ -11,7 +11,7 @@
         $reg= $user->login($email,$pass);
         if($reg==true){
             setcookie('uid', $reg['uid'], time() + (86400 * 30), "/");
-            echo "1";
+            echo $reg['role'];
         }else{
             echo "0";
         }

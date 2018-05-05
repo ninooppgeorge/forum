@@ -55,7 +55,7 @@ class myUser{
     function getMyProPic(){
         $email = $this->userInfo()['email'];
         $size = 40;
-        $grav_url = "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=" . $size;
+        $grav_url = "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=" . $size."&d=identicon";
         return $grav_url;
     }
 
