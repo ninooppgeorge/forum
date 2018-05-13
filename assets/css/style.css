@@ -162,6 +162,19 @@ body {
   margin-top: 10px;
   display: inline-block; }
 
+.stable {
+  padding: 0% 10%; }
+  .stable .row {
+    background: #fff; }
+  .stable .shead {
+    font-weight: bold;
+    font-size: 19px;
+    padding: 1% 0%;
+    background: #ddd; }
+  .stable .schild {
+    padding: 1% 0%;
+    border-bottom: 1px solid #ddd; }
+
 .row {
   margin-left: auto;
   margin-right: auto;
@@ -1441,6 +1454,7 @@ select {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   padding: 10px; }
   .dashnav .username {
     color: #555;
@@ -1591,10 +1605,20 @@ select {
     float: left;
     margin-right: 10px;
     border: 1px solid #ddd; }
-  .post_container .ppiccont .floatafterimg .time {
-    display: block;
-    color: #999;
-    font-size: 14px; }
+  .post_container .ppiccont .floatafterimg {
+    position: relative; }
+    .post_container .ppiccont .floatafterimg .time {
+      display: block;
+      color: #999;
+      font-size: 14px; }
+    .post_container .ppiccont .floatafterimg .post_delete {
+      float: right;
+      position: absolute;
+      color: #ff003b;
+      font-weight: bold;
+      cursor: pointer;
+      right: 0;
+      top: 0; }
 
 .comments_container {
   width: 97%;
@@ -1639,5 +1663,23 @@ select {
       margin-left: 10px;
       font-weight: bold;
       cursor: pointer; }
+
+.button_slick {
+  margin-bottom: 50px;
+  margin-left: 10%; }
+  .button_slick a {
+    background: #fff;
+    border: 2px solid #1199a0;
+    padding: 15px 25px;
+    border-radius: 100px;
+    color: #1199a0;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px; }
+    .button_slick a.active {
+      background: #1199a0;
+      border: 2px solid #1199a0;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

@@ -120,10 +120,20 @@
     float: left;
     margin-right: 10px;
     border: 1px solid #ddd; }
-  .post_container .ppiccont .floatafterimg .time {
-    display: block;
-    color: #999;
-    font-size: 14px; }
+  .post_container .ppiccont .floatafterimg {
+    position: relative; }
+    .post_container .ppiccont .floatafterimg .time {
+      display: block;
+      color: #999;
+      font-size: 14px; }
+    .post_container .ppiccont .floatafterimg .post_delete {
+      float: right;
+      position: absolute;
+      color: #ff003b;
+      font-weight: bold;
+      cursor: pointer;
+      right: 0;
+      top: 0; }
 
 .comments_container {
   width: 97%;

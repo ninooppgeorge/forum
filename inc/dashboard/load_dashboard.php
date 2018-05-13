@@ -10,7 +10,7 @@
     foreach ($myposts as $key => $value) {
         $pid = $value['pid'];
 ?>
-        <div class="post_cont_cont cf">
+        <div class="post_cont_cont cf" id="post_total_cont-<?php echo $value['pid']; ?>">
             <div class="likebox">
                 <?php 
                     if($user->post_get_me_liked($value['pid'])>0){
@@ -33,6 +33,13 @@
                             <div class="floatafterimg">
                                 <a class="name"><?php echo $value['fullname'] ?></a>
                                 <a class="time"><?php echo time_stamp($value['timestamp']); ?></a>
+                                <?php
+                                    if($value['uid']==$_COOKIE['uid']){
+                                ?>
+                                    <a id="post_delete-<?php echo $value['pid']; ?>" class="post_delete">x</a>
+                                <?php
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>

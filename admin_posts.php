@@ -25,11 +25,11 @@
     <div class="dashcont">
         <div class="dashboard">
             <div class="button_slick">
-                <a href="admin.php" class="active">Manage users</a>
-                <a href="admin_posts.php">Manage Posts</a>
+                <a href="admin.php">Manage users</a>
+                <a href="admin_posts.php" class="active">Manage Posts</a>
             </div>
             <?php
-                include "admin/load_users.php";
+                include "admin/load_posts.php";
             ?>
         </div>
     </div>

@@ -48,6 +48,7 @@
             border: 1px solid #ddd;
         }
         .floatafterimg{
+            position: relative;
             .name{
 
             }
@@ -55,6 +56,15 @@
                 display: block;
                 color: #999;
                 font-size: 14px;
+            }
+            .post_delete{
+                float: right;
+                position: absolute;
+                color: #ff003b;
+                font-weight: bold;
+                cursor: pointer;
+                right: 0;
+                top: 0;
             }
         }
     }

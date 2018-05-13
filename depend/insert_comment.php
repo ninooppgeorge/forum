@@ -10,9 +10,12 @@
         $user = new myUser($db->connect());
 
 
-        $message = $_POST['reply'];
+        $message = trim($_POST['reply']);
         $pid = $_POST['pid'];
-        $uinfo = $ouser->insertcomment($message,$pid);
+        if($message==""){
+            echo 0;
+        }else{
+            $uinfo = $ouser->insertcomment($message,$pid);
 ?>
         <div class="comment_single">
             <div class="comment_ppiccont cf">
@@ -29,6 +32,7 @@
             </div>
         </div>
 <?php
+        }
     }else{
         echo 0;
     }

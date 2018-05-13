@@ -10,23 +10,27 @@
         $user = new myUser($db->connect());
 
 
-        $message = $_POST['post'];
-        $type = $_POST['post_type'];
-        $uinfo = $user->insertpost($message, $type);
+        $message = trim($_POST['post']);
+        if($message==""){
+            echo 0;
+        }else{
+            $type = $_POST['post_type'];
+            $uinfo = $user->insertpost($message, $type);
 ?>
-        <div class="post_container" id="pcont<?php echo $uinfo['pid'] ?>">
-            <div class="ppiccont">
-                <div>
-                    <img src="<?php echo $ouser->getUserProPic($ouser->userInfo($uinfo['uid'])['email']); ?>" alt="">
-                    <div class="floatafterimg">
-                        <a class="name"><?php echo $uinfo['fullname'] ?></a>
-                        <a class="time"><?php echo time_stamp($uinfo['timestamp']); ?></a>
+            <div class="post_container" id="pcont<?php echo $uinfo['pid'] ?>">
+                <div class="ppiccont">
+                    <div>
+                        <img src="<?php echo $ouser->getUserProPic($ouser->userInfo($uinfo['uid'])['email']); ?>" alt="">
+                        <div class="floatafterimg">
+                            <a class="name"><?php echo $uinfo['fullname'] ?></a>
+                            <a class="time"><?php echo time_stamp($uinfo['timestamp']); ?></a>
+                        </div>
                     </div>
                 </div>
+                <p><?php echo $uinfo['post'] ?></p>
             </div>
-            <p><?php echo $uinfo['post'] ?></p>
-        </div>
 <?php
+        }
     }else{
         echo 0;
     }

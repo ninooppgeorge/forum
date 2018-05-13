@@ -22,3 +22,24 @@ body{
 
 @import './components/components';
 @import './pages/pages';
+
+.button_slick{
+  margin-bottom: 50px;
+  margin-left: 10%;
+  a{
+    background: #fff;
+    border: 2px solid #1199a0;
+    padding: 15px 25px;
+    border-radius: 100px;
+    color: #1199a0;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    &.active{
+      background: #1199a0;
+      border: 2px solid #1199a0;
+      color: #fff;
+    }
+  }
+}

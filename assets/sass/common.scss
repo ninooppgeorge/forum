@@ -12,3 +12,20 @@
     margin-top: 10px;
     display: inline-block;
 }
+
+.stable{
+    padding: 0% 10%;
+    .row{
+        background: #fff;
+    }
+    .shead{
+        font-weight: bold;
+        font-size: 19px;
+        padding: 1% 0%;
+        background: #ddd;
+    }
+    .schild{
+        padding: 1% 0%;
+        border-bottom: 1px solid #ddd;
+    }
+}

@@ -30,6 +30,10 @@ class myUser{
         $query = $this->query("DELETE FROM reply WHERE rid=$rid");
         
     }
+    function delete_post($pid){
+        $query = $this->query("DELETE FROM posts WHERE pid=$pid");
+        
+    }
 
     function getMyPosts(){
         $uid = $_COOKIE['uid'];

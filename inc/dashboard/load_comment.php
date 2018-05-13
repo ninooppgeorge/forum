@@ -11,9 +11,18 @@
                             <img src="<?php echo $ouser->getUserProPic($ouser->userInfo($cvalue['uid_fk'])['email']); ?>" alt="">
                         </div>
                         <div class="floatafterimg right">
-                            <div class="time"><a><?php echo time_stamp($cvalue['timestamp']); ?></a><a id="delete-<?php echo $rid; ?>" class="delete delete_btn">x</a></div>
-                            <a class="name"><?php echo $cvalue['fullname'] ?></a>
-                            <p><?php echo $cvalue['reply']; ?></p>
+                            <div class="time">
+                                <a><?php echo time_stamp($cvalue['timestamp']); ?></a>
+                                <?php 
+                                    if($cvalue['uid_fk']==$_COOKIE['uid']){
+                                ?>
+                                    <a id="delete-<?php echo $rid; ?>" class="delete delete_btn">x</a>
+                                <?php
+                                    }
+                                ?>
+                            </div>
+                                <a class="name"><?php echo $cvalue['fullname'] ?></a>
+                                <p><?php echo $cvalue['reply']; ?></p>
                         </div>
                     </div>
             </div>
